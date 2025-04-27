@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flappy Bird</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div id="game">
+            <div id="block"></div>
+            <div id="hole"></div>
+            <div id="bird"></div>
+            <div id="score">Score: <span>0</span></div>
+            <!-- Demo elements -->
+            <div id="demo-bird"></div>
+            <div class="demo-pipe"></div>
+            <div class="demo-hole"></div>
+            <div class="demo-text" id="demo-text-1">Press SPACE or Click to Jump!</div>
+            <div class="demo-text" id="demo-text-2">Avoid the Green Pipes!</div>
+            <div class="demo-text" id="demo-text-3">Try to get the highest score!</div>
+        </div>
+        <div id="start-screen">
+            <h1>Flappy Bird</h1>
+            <button id="start-button">Start Game</button>
+            <p>Click or Press Spacebar to Jump</p>
+            <p>Or use the JUMP button on mobile</p>
+        </div>
+        <div id="game-over">
+            <h2>Game Over!</h2>
+            <p>Your Score: <span id="final-score">0</span></p>
+            <button id="restart-button">Play Again</button>
+        </div>
+    </div>
+    
+    <!-- Mobile jump button - moved outside game container -->
+    <button id="jump-button">JUMP</button>
+    
+    <script src="script.js"></script>
+</body>
+</html> 
